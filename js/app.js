@@ -11,18 +11,18 @@
 		var self = this,
 			device = {};
 
-	      device['phone'] = matchmedia.onPhone(function(mediaQueryList) {
-	          self.isPhone = mediaQueryList.matches;
-	      });
-	      device['tablet'] = matchmedia.onTablet( function(mediaQueryList) {
-	          self.isTablet = mediaQueryList.matches;
-	      });
-	      device['desktop'] = matchmedia.onDesktop( function(mediaQueryList) {
-	          self.isDesktop = mediaQueryList.matches;
-	      });
-	      device['smDesktop'] = matchmedia.on('(min-width: 769px) and (max-width: 1023px)', function(mediaQueryList){
-	      	self.isSmDesktop = mediaQueryList.matches;
-		})
+		device['phone'] = matchmedia.onPhone(function(mediaQueryList) {
+			self.isPhone = mediaQueryList.matches;
+		});
+		device['tablet'] = matchmedia.onTablet( function(mediaQueryList) {
+			self.isTablet = mediaQueryList.matches;
+		});
+		device['desktop'] = matchmedia.onDesktop( function(mediaQueryList) {
+			self.isDesktop = mediaQueryList.matches;
+		});
+		device['smDesktop'] = matchmedia.on('(min-width: 769px) and (max-width: 1023px)', function(mediaQueryList) {
+			self.isSmDesktop = mediaQueryList.matches;
+		});
 
   	}]);
 
